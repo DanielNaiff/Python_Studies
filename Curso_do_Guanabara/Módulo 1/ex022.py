@@ -1,0 +1,8 @@
+name = input("Enter your full name: ").strip()
+print(name.lower())
+print(name.upper())
+print(f"Your name have {len(name) - name.count(' ')} ")
+print(name.split())
+name = name.split()
+print(name[0])
+print(len(name[0]))
