@@ -3,5 +3,6 @@ razao = int(input("Digite a razão: "))
 contador = 0
 while contador < 10:
     termo = primeiro_termo + (contador*razao)
-    print(termo)
+    print(f"{termo}-",end=" ")
     contador += 1
+print("FIM")
