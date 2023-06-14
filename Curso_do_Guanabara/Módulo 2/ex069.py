@@ -1,24 +1,28 @@
-mulheres_menos20 = 0
+mulher_menor20 = 0
 maiores = 0
 homens = 0
-
 while True:
-    sexo = str(input("Digite o seu sexo[m/f]:")).lower().rstrip()
-    idade = int(input("Digite a sua idade:"))
+    print("-"*24)
+    print("Cadastrar uma pessoa")
+    print("-"*24)
+    idade = int(input("Idade:"))
+    sexo = ' '
+    while sexo not in 'fm':
+        sexo = str(input("Sexo[m/f]:")).lower().rstrip()[0]
     if sexo == 'f':
         if idade < 20:
-            mulheres_menos20 += 1
+            mulher_menor20 += 1
         if idade > 18:
             maiores += 1
-    if sexo == 'm':
+    elif sexo == 'm':
         homens += 1
         if idade > 18:
             maiores += 1
-    escolha = str(input("Deseja continuar?[s/n]"))
-    if escolha == 's':
-        continue
-    else:
+    escolha = ' '
+    while escolha not in 'sn':
+        escolha = str(input("Quer continuar[s/n]?")).lower().rstrip()[0]
+    if escolha == 'n':
         break
-print("Pessoas maiores de 18:",maiores)
-print("Quantidade de homens cadastrados:",homens)
-print("Mulheres com menos de 20 anos:",mulheres_menos20)
+print("Mulheres com menos de 20 anos:",mulher_menor20)
+print("Total de homens cadastrados:",homens)
+print("Maiores de idade:",maiores)
