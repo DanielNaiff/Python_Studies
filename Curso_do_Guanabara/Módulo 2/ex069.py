@@ -9,15 +9,13 @@ while True:
     sexo = ' '
     while sexo not in 'fm':
         sexo = str(input("Sexo[m/f]:")).lower().rstrip()[0]
+    if idade > 18:
+        maiores += 1
     if sexo == 'f':
         if idade < 20:
             mulher_menor20 += 1
-        if idade > 18:
-            maiores += 1
     elif sexo == 'm':
         homens += 1
-        if idade > 18:
-            maiores += 1
     escolha = ' '
     while escolha not in 'sn':
         escolha = str(input("Quer continuar[s/n]?")).lower().rstrip()[0]
