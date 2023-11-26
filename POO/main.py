@@ -6,3 +6,6 @@ p1.comer('maçã')
 p1.falar('POO')
 p1.parar_comer()
 p1.falar('POO')
+
+print(p1.ano_atual)
+print(p1.get_ano_nascimento())
