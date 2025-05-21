@@ -9,3 +9,4 @@ p1.falar('POO')
 
 print(p1.ano_atual)
 print(p1.get_ano_nascimento())
+print(Pessoa.gera_id())
