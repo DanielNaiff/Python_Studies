@@ -4,6 +4,7 @@ class Produto:
         self.preco = preco
 
     def desconto(self, percentual):
+        
         self.preco = self.preco - (self.preco * (percentual/100))
 
     # Getter
